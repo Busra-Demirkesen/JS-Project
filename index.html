@@ -37,13 +37,15 @@
           <li><a href="#">E-Kitaplar</a></li>
           <li><a href="#">Sesli Kitaplar</a></li>
         </ul>
-        <button class="login-btn">Giriş Yap</button>
+        <button class="login-btn" id="login-btn">Giriş Yap</button>
       </nav>
     </header>
 
+    <div class="blur-bg-overlay"></div>
+
     <!--Popup Form-->
-    <div class="form-popup">
-      <span class="close-btn material-symbols-outlined">close</span>
+    <div class="form-popup" id="form-popup">
+      <span class="close-btn material-symbols-outlined" id="close-btn">close</span>
       <div class="form-box login">
         <div class="form-details">
           <h2>Tekrar Hoşgeldiniz</h2>
@@ -65,7 +67,7 @@
             <button type="submit" class="submit-btn">Giriş Yap</button>
             <div class="bottom-link">
               Bir hesabın yok mu?
-              <a href="#" class="create-account">Hesap Oluştur</a>
+              <a href="#" class="create-account" id="signup-link">Hesap Oluştur</a>
             </div>
           </form>
         </div>
@@ -100,11 +102,13 @@
             <button type="submit" class="submit-btn">Giriş Yap</button>
             <div class="bottom-link">
               Bir hesabın yok mu?
-              <a href="#" class="create-account">Hesap Oluştur</a>
+              <a href="#" class="create-account" id="login-link">Hesap Oluştur</a>
             </div>
           </form>
         </div>
       </div>
     </div>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
