@@ -1,10 +1,26 @@
+const navbarMenu = document.querySelector('.navbar .links');
+
 const showPopupButton = document.getElementById('login-btn');
 
 const hidePopupButton = document.getElementById('close-btn');
 
+const menuBtn = document.querySelector('.menu-btn');
+
+const hideMenuBtn = navbarMenu.querySelector('.close-btn');
+
 const formPopup = document.getElementById('form-popup');
 
 const loginSignGroupLink = document.querySelectorAll('.form-box .bottom-link a');
+
+
+
+//Show the menu when the button is clicked
+menuBtn.addEventListener('click', () =>{
+navbarMenu.classList.toggle('show-menu');
+});
+
+//Hide the menu when the button is clicked
+hideMenuBtn.addEventListener('click', () => menuBtn.click());
 
 
 
